@@ -1,6 +1,5 @@
 "use client"
 
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -29,35 +28,35 @@ export default function Home() {
       }`}
     >
 
-    <div className="mb-[50px] text-2xl">
-      Hello, my name is Pascal Passigan. I'm a senior at MIT, studying AI (course 6-4)
-    </div>
+      <div className="mb-[50px] text-2xl">
+        Hello, my name is Pascal Passigan. I'm a senior at MIT, studying AI
+      </div>
 
-    <div className="mb-[50px]">
-      <ul>
-        <li>
-          Projects
-        </li>
-        <li>
-          Thoughts
-        </li>
-        <li>
-          Pictures
-        </li>
-      </ul>
-    </div>
-    
-    <div className="relative z-10 flex place-items-center w-8/9 layout=responsive">
-      <Image
-        className="mountcocoran"
-        src="/mount_corcoran.jpg"
-        alt="Mount Corcoran"
-        layout="responsive"
-        width={100}
-        height={37}
-        priority
-      />
-    </div>
+      <div className="mb-[50px]">
+        <ul className="flex flex-row space-x-9">
+          <li>
+            Projects
+          </li>
+          <li>
+            Thoughts
+          </li>
+          <li>
+            Pictures
+          </li>
+        </ul>
+      </div>
+      
+      <div className="relative z-10 flex place-items-center w-8/9 layout=responsive">
+        <Image
+          className="mountcocoran"
+          src="/mount_corcoran.jpg"
+          alt="Mount Corcoran"
+          layout="responsive"
+          width={100}
+          height={37}
+          priority
+        />
+      </div>
     </main>
   );
 }
