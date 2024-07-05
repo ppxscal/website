@@ -29,7 +29,8 @@ export default function Home() {
     >
 
       <div className="mb-[50px] text-2xl">
-        Hello, my name is Pascal Passigan. I'm a senior at MIT, studying AI
+        Hi, my name is Pascal.
+        I'm a senior at MIT, studying AI
       </div>
 
       <div className="mb-[50px]">
