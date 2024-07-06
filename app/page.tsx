@@ -1,7 +1,9 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from 'next/link';
+import EntryCard from './components/EntryCard';
 
 export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -23,38 +25,38 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-20 ${
+      className={`flex min-h-screen flex-col items-center justify-center p-8 ${
         theme === "dark" ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
-
-      <div className="mb-[50px] text-2xl">
-        Hi, my name is Pascal.
-        I'm a senior at MIT, studying AI
-      </div>
-
-      <div className="mb-[50px]">
-        <ul className="flex flex-row space-x-9">
-          <li>
-            Projects
-          </li>
-          <li>
-            Thoughts
-          </li>
-          <li>
-            Pictures
-          </li>
-        </ul>
+      <div className="max-w-3xl w-full text-center">
+        <div className="mb-12 text-2xl font-bold">
+          Hi, my name is Pascal.
+          I'm a senior at MIT, studying AI
+        </div>
+        <div className="mb-12">
+          <ul className="flex flex-row justify-center space-x-12 text-xl">
+            <li>
+              <Link href="/pictures" className="hover:underline">Pictures</Link>
+            </li>
+            <li>
+              <Link href="/projects" className="hover:underline">Projects</Link>
+            </li>
+            <li>
+              <Link href="/thoughts" className="hover:underline">Thoughts</Link>
+            </li>
+          </ul>
+        </div>
       </div>
       
-      <div className="relative z-10 flex place-items-center w-8/9 layout=responsive">
+      <div className="relative z-10 flex place-items-center w-8/9">
         <Image
           className="mountcocoran"
           src="/mount_corcoran.jpg"
           alt="Mount Corcoran"
-          layout="responsive"
-          width={100}
-          height={37}
+          layout="intrinsic"
+          width={4096} 
+          height={370} 
           priority
         />
       </div>
