@@ -31,8 +31,7 @@ export default function Home() {
     >
       <div className="max-w-3xl w-full text-center">
         <div className="mb-12 text-2xl font-bold">
-          Hi, my name is Pascal.
-          I'm a senior at MIT, studying AI
+          Hi, my name is Pascal
         </div>
         <div className="mb-12">
           <ul className="flex flex-row justify-center space-x-12 text-xl">
@@ -49,7 +48,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="relative z-10 flex place-items-center w-8/9">
+      <div className="relative z-10 flex place-items-center w-4/9">
         <Image
           className="mountcocoran"
           src="/mount_corcoran.jpg"

@@ -5,16 +5,10 @@ const Page: React.FC = () => {
     return (
         <div className="space-y-12">
         <EntryCard
-            title="My Latest Project"
-            description="A brief description of my latest project"
-            imageSrc="/mount_corcoran.jpg"
-            link="/projects/latest-project"
-        />
-        <EntryCard
-            title="Recent Thoughts"
-            description="Some recent thoughts on AI and technology"
-            imageSrc="/mount_corcoran.jpg"
-            link="/thoughts/recent-thoughts"
+            title="Hello World (7-28-24)"
+            description="Looking for food in Boston with my friend Albert"
+            imageSrc="/boston_al.jpg"
+            link="/thoughts/first"
         />
         </div>
     );
