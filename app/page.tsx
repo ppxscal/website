@@ -50,7 +50,7 @@ export default function Home() {
       
       <div className="relative z-10 flex place-items-center w-full max-w-6xl">
         <Image
-          className="mountcocoran"
+          className="rounded-lg"
           src="/mount_corcoran.jpg"
           alt="Mount Corcoran"
           layout="responsive"
