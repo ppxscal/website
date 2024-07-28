@@ -48,12 +48,12 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="relative z-10 flex place-items-center w-4/9">
+      <div className="relative z-10 flex place-items-center w-full max-w-6xl">
         <Image
           className="mountcocoran"
           src="/mount_corcoran.jpg"
           alt="Mount Corcoran"
-          layout="intrinsic"
+          layout="responsive"
           width={4096} 
           height={370} 
           priority

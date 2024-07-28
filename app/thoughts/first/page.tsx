@@ -21,6 +21,7 @@ const Page: React.FC = () => {
                     Though wise men at their end know dark is right, <br />
                     Because their words had forked no lightning they <br />
                     Do not go gentle into that good night. <br />
+                    <br />
                     - Dylan Thomas
                 </p>
             </article>
