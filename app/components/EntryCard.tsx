@@ -12,6 +12,7 @@ interface EntryCardProps {
 export default function EntryCard({ title, description, imageSrc, link }: EntryCardProps) {
   return (
     <Link href={link} className="block mb-12">
+      <h2 className="text-center text-2xl">{title}</h2>
       <div className="relative aspect-video mb-4 w-2/3 mx-auto">
         <Image
           src={imageSrc}
@@ -21,10 +22,7 @@ export default function EntryCard({ title, description, imageSrc, link }: EntryC
           className="rounded-lg"
         />
       </div>
-      <div className = "text-center"> 
-      <h2 className="text-2xl font-bold mb-2">{title}</h2>
-        <p className="text-lg">{description}</p>
-      </div>
+        <p className="text-sm text-center">{description}</p>
     </Link>
   );
 }
