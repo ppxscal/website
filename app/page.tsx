@@ -35,12 +35,12 @@ export default function Home() {
         </div>
         <div className="mb-12">
           <ul className="flex flex-row justify-center space-x-12 text-xl">
-            <li>
+            {/* <li>
               <Link href="/pictures" className="hover:underline">Pictures</Link>
             </li>
             <li>
               <Link href="/projects" className="hover:underline">Projects</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/thoughts" className="hover:underline">Thoughts</Link>
             </li>
@@ -52,13 +52,14 @@ export default function Home() {
         <Image
           className="rounded-lg"
           src="/mount_corcoran.jpg"
-          alt="Mount Corcoran"
+          alt=""
           layout="responsive"
           width={4096} 
           height={370} 
           priority
         />
       </div>
+      <a href="ppxscal@mit.edu">My Email</a>
     </main>
   );
 }
