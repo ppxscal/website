@@ -7,22 +7,41 @@ interface EntryCardProps {
   description: string;
   imageSrc: string;
   link: string;
+  external?: boolean; // Add this line
 }
 
-export default function EntryCard({ title, description, imageSrc, link }: EntryCardProps) {
+export default function EntryCard({ title, description, imageSrc, link, external = false }: EntryCardProps) {
   return (
-    <Link href={link} className="block mb-12">
-      <h2 className="text-center text-2xl">{title}</h2>
-      <div className="relative aspect-video mb-4 w-2/3 mx-auto">
-        <Image
-          src={imageSrc}
-          alt={title}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
-        />
-      </div>
-        <p className="text-sm text-center">{description}</p>
-    </Link>
+    <>
+      {external ? (
+        <a href={link} className="block mb-12" target="_blank" rel="noopener noreferrer">
+          <h2 className="text-center text-2xl">{title}</h2>
+          <div className="relative aspect-video mb-4 w-2/3 mx-auto">
+            <Image
+              src={imageSrc}
+              alt={title}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+          <p className="text-sm text-center">{description}</p>
+        </a>
+      ) : (
+        <Link href={link} className="block mb-12">
+          <h2 className="text-center text-2xl">{title}</h2>
+          <div className="relative aspect-video mb-4 w-2/3 mx-auto">
+            <Image
+              src={imageSrc}
+              alt={title}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+          <p className="text-sm text-center">{description}</p>
+        </Link>
+      )}
+    </>
   );
 }

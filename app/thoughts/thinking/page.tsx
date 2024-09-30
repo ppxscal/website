@@ -25,7 +25,7 @@ const Page: React.FC = () => {
                     <a href="https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems" className="text-blue-500"> truths outside the reach of those operating in a formal system.</a> 
                     What does this mean for trillion/quadrillion parameter models exploring the space of our toughest problems like quantum gravity and the stock market? There's no guarantee that we can solve these, but we could certainly go very far. One problem that interests me is consciousness. 
                     While we could make a lot of progress in the coming decades learning about the functioning of the brain, the chemistry and physics that govern its structure, the elephant in the room is what exactly is experience and understanding. Roger Penrose's view is that if we can understand a set 
-                    of axioms, we can surpass them. Surpassing them in the sense of understanding their limitations, and what lies beyond. 
+                    of axioms, we can surpass them. Surpassing them in the sense of understanding their limitations, and what lies beyond. We can understand things about our universe like the limits of logic, general relativity, computatbility, and the standard model. 
                 </p>
 
             </article>

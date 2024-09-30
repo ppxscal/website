@@ -4,22 +4,24 @@ import EntryCard from '../components/EntryCard';
 const Page: React.FC = () => {
     return (
         <div>
-            Under construction 
+         <div className="space-y-12">
+         <EntryCard
+            title="Mantis"
+            description="A scientific workbench, with user-enabled RAG and programatic computation with latent materials of multi-modal deep learning models."
+            imageSrc="/elmantis.png"
+            link="https://home.withmantis.com"
+            external={true} // Add this line
+        />
+
+        <EntryCard
+            title="Neural Notes"
+            description="An AI companion for performing jazz improvisation in alterating trades. Addresses imperpect timing in human input and generates a propbablisitc model of the next note to play in a sequence. Working on hosting a demo " 
+            imageSrc="/elneuro.png"
+            link="/thoughts/recent-thoughts"
+        />
         </div>
-        // <div className="space-y-12">
-        // <EntryCard
-        //     title="My Latest Project"
-        //     description="A brief description of my latest project"
-        //     imageSrc="/mount_corcoran.jpg"
-        //     link="/projects/latest-project"
-        // />
-        // <EntryCard
-        //     title="Recent Thoughts"
-        //     description="Some recent thoughts on AI and technology"
-        //     imageSrc="/mount_corcoran.jpg"
-        //     link="/thoughts/recent-thoughts"
-        // />
-        // </div>
+        </div>
+
     );
 };
 

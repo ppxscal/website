@@ -37,10 +37,10 @@ export default function Home() {
           <ul className="flex flex-row justify-center space-x-12 text-xl">
             {/* <li>
               <Link href="/pictures" className="hover:underline">Pictures</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/projects" className="hover:underline">Projects</Link>
-            </li> */}
+            </li>
             <li>
               <Link href="/thoughts" className="hover:underline">Thoughts</Link>
             </li>
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       
       <div className="relative z-10 flex place-items-center w-full max-w-6xl">
-        <Image
+        {/* <Image
           className="rounded-lg"
           src="/mount_corcoran.jpg"
           alt=""
@@ -57,7 +57,7 @@ export default function Home() {
           width={4096} 
           height={370} 
           priority
-        />
+        /> */}
       </div>
       <a href="ppxscal@mit.edu">My Email</a>
     </main>
