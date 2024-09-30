@@ -59,7 +59,7 @@ export default function Home() {
           priority
         /> */}
       </div>
-      <a href="ppxscal@mit.edu">My Email</a>
+      <a href="mailto:ppxscal@mit.edu">My Email</a>
     </main>
   );
 }
