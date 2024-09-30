@@ -15,7 +15,7 @@ const Page: React.FC = () => {
 
         <EntryCard
             title="Neural Notes"
-            description="An AI companion for performing jazz improvisation in alterating trades. Addresses imperpect timing in human input and generates a propbablisitc model of the next note to play in a sequence. Working on hosting a demo " 
+            description="An AI companion for performing jazz improvisation in alterating trades. Addresses imperpect timing in human input and generates a probabalisitc model of the next note to play in a sequence. Working on hosting a demo " 
             imageSrc="/elneuro.png"
             link="/thoughts/recent-thoughts"
         />
