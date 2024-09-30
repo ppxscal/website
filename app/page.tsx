@@ -36,7 +36,7 @@ export default function Home() {
         <div className="mb-12">
           <ul className="flex flex-row justify-center space-x-12 text-xl">
             <li>
-              <Link href="/pictures" className="hover:underline">Pictures</Link>
+              <Link href="/papers" className="hover:underline">Papers</Link>
             </li>
             <li>
               <Link href="/projects" className="hover:underline">Projects</Link>
