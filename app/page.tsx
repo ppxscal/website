@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from 'next/link';
-import EntryCard from './components/EntryCard';
+import ParticlesBackground from './components/ParticlesBackground';
 
 export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -12,7 +11,7 @@ export default function Home() {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     setTheme(mediaQuery.matches ? "dark" : "light");
 
-    const handleChange = (e: MediaQueryListEvent) => {
+    const handleChange = (e: any) => {
       setTheme(e.matches ? "dark" : "light");
     };
 
@@ -24,12 +23,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-center p-8 ${
-        theme === "dark" ? "bg-black text-white" : "bg-white text-black"
-      }`}
-    >
-      <div className="max-w-3xl w-full text-center">
+    <main className={`relative flex min-h-screen flex-col items-center justify-center p-8 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
+      <ParticlesBackground />
+      <div className="max-w-3xl w-full text-center relative z-10">
         <div className="mb-12 text-2xl font-bold">
           Hi, my name is Pascal
         </div>
@@ -47,18 +43,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      
-      <div className="relative z-10 flex place-items-center w-full max-w-6xl">
-        {/* <Image
-          className="rounded-lg"
-          src="/mount_corcoran.jpg"
-          alt=""
-          layout="responsive"
-          width={4096} 
-          height={370} 
-          priority
-        /> */}
-      </div>
+
       <a href="mailto:ppxscal@mit.edu">My Email</a>
     </main>
   );
