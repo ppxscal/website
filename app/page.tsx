@@ -22,29 +22,33 @@ export default function Home() {
     };
   }, []);
 
-  return (
-    <main className={`relative flex min-h-screen flex-col items-center justify-center p-8 ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
-      <ParticlesBackground />
-      <div className="max-w-3xl w-full text-center relative z-10">
-        <div className="mb-12 text-2xl font-bold">
-          Hi, my name is Pascal
-        </div>
-        <div className="mb-12">
-          <ul className="flex flex-row justify-center space-x-12 text-xl">
-            <li>
-              <Link href="/papers" className="hover:underline">Papers</Link>
-            </li>
-            <li>
-              <Link href="/projects" className="hover:underline">Projects</Link>
-            </li>
-            <li>
-              <Link href="/thoughts" className="hover:underline">Thoughts</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+// ... existing code ...
 
-      <a href="mailto:ppxscal@mit.edu">My Email</a>
-    </main>
-  );
+return (
+  <main className={`relative flex min-h-screen flex-col items-center justify-center p-8 ${theme === "dark" ? "bg-black" : "bg-white"} text-white`}>
+    <ParticlesBackground />
+    <div className="max-w-3xl w-full text-center relative z-10">
+      <div className="mb-12 text-2xl font-bold">
+        Hi, my name is Pascal
+      </div>
+      <div className="mb-12">
+        <ul className="flex flex-row justify-center space-x-12 text-xl">
+          <li>
+            <Link href="/papers" className="hover:underline">Papers</Link>
+          </li>
+          <li>
+            <Link href="/projects" className="hover:underline">Projects</Link>
+          </li>
+          <li>
+            <Link href="/thoughts" className="hover:underline">Thoughts</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <a href="mailto:ppxscal@mit.edu">My Email</a>
+  </main>
+);
 }
+
+// ... existing code ...
