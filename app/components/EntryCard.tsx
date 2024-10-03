@@ -14,9 +14,9 @@ export default function EntryCard({ title, description, imageSrc, link, external
   return (
     <>
       {external ? (
-        <a href={link} className="block mb-12" target="_blank" rel="noopener noreferrer">
+        <a href={link} className="block mb-12 w-2/3 mx-auto" target="_blank" rel="noopener noreferrer">
           <h2 className="text-center text-2xl">{title}</h2>
-          <div className="relative aspect-video mb-4 w-2/3 mx-auto">
+          <div className="relative aspect-video mb-4">
             <Image
               src={imageSrc}
               alt={title}
@@ -25,12 +25,12 @@ export default function EntryCard({ title, description, imageSrc, link, external
               className="rounded-lg"
             />
           </div>
-          <p className="text-sm text-center">{description}</p>
+          <p className="text-sm md:text-base lg:text-lg text-center">{description}</p>
         </a>
       ) : (
-        <Link href={link} className="block mb-12">
+        <Link href={link} className="block mb-12 w-2/3 mx-auto">
           <h2 className="text-center text-2xl">{title}</h2>
-          <div className="relative aspect-video mb-4 w-2/3 mx-auto">
+          <div className="relative aspect-video mb-4">
             <Image
               src={imageSrc}
               alt={title}
@@ -39,7 +39,7 @@ export default function EntryCard({ title, description, imageSrc, link, external
               className="rounded-lg"
             />
           </div>
-          <p className="text-sm text-center">{description}</p>
+          <p className="text-sm md:text-base lg:text-lg text-center">{description}</p>
         </Link>
       )}
     </>
