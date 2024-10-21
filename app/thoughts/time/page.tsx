@@ -27,10 +27,9 @@ const Page: React.FC = () => {
                 </p>
                 <p className="text-black text-base md:text-lg mb-4">
                     In my algorithms class we learned about this cool problem formulation called <a href="https://en.wikipedia.org/wiki/Flow_network" className="text-blue-500">flow networks</a>.
-                    I'd describe it as a way to measure the number of paths that can be taken from one point on a graph to another, subject to certain constraints.
-                    If life is a graph, nodes being states of being, and edges being the choices we make, then a flow network is a way to measure the number of paths we can take from one state to another.
-                    If we have some state we want to reach from our current position, then we can think of possible ways to get there as a superposition of paths, the ones with the largest flow being the most likely to get us there.
-                    I probably didn't need to bring up flow networks, but I think it's a cool way to think about life - we are given choices, some of which are more likely to lead us to our goals than others.
+                    Suppose that we can represent life as a graph, nodes representing states of being, and edges representing the choices we make. We can define flow here as the energy or potential that propels us toward our desired state.
+                    The goal is to focus this energy and maximize its utility. Some choices will lead us slowly through pleasant states, while others will take us quickly through challenging ones. Choices can also hold us back, enforcing a upper bound on flow. 
+                    I think the key is to find the right balance, a path that we can bear but also one that will lead us to our desired state in reasonable time. But at the end of the day our actions are the defining factor. 
                 </p>
 
             </article>
