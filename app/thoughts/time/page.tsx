@@ -6,7 +6,7 @@ const Page: React.FC = () => {
             <article className="max-w-prose w-full">
                 <p className="text-black text-xl md:text-2xl mb-4">Time</p>
                 <p className="text-black text-base md:text-lg mb-4">
-                    How do we describe self-awareness? It could be an ability recognize and understand one's own thoughts, emotions, and behaviors.
+                    How do we describe self-awareness? It could be an ability to recognize and understand one's own thoughts, emotions, and behaviors.
                     It can allow a person to reflect on their own mental and emotional states, understand their motivations, and recognize how they are perceived by others.
                     I'm not convinced self-awareness is a fixed trait, or limited to humans. It can be cultivated and developed over time. Sometimes we go on autopilot, without conscious effort 
                     into every single action we execute. We don't ponder about every single step we take, every single word we say, or every single thought that crosses our mind; a large part of our
