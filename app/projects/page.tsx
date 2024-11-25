@@ -9,7 +9,7 @@ const Page: React.FC = () => {
             title="Mantis"
             description="A scientific workbench, with user-enabled RAG and programatic computation with latent materials of multi-modal deep learning models."
             imageSrc="/elmantis.png"
-            link="https://home.withmantis.com"
+            link="https://mantisai.csail.mit.edu"
             external={true} // Add this line
         />
 
